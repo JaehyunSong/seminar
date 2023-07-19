@@ -78,6 +78,7 @@ bind_rows(list(G1, G2)) |>
 
 ```{r}
 #| echo: false
+#| eval: false
 pacman::p_load(tidyverse, visNetwork)
 
 nodes <- tibble(id = 1:9,
