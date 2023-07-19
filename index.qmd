@@ -1,0 +1,32 @@
+---
+title: "Data Science for Social Science"
+link-external-newwindow: true
+---
+
+```{r}
+#| include: false
+ff_ver <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applications/Firefox.app/Contents/Info.plist -o -', intern = TRUE) |>
+  stringr::str_extract("[0-9]+\\.[0-9]+.+") |>
+  stringr::str_replace("\b", "")
+
+rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applications/RStudio.app/Contents/Info.plist -o -', intern = TRUE) |>
+  stringr::str_replace("-daily", "") |>
+  stringr::str_extract("202[0-9]\\.[0-9]+\\.[0-9]+\\+[0-9]+")
+
+macos_ver <- system('sw_vers -productVersion', intern = TRUE)
+```
+
+関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」のホームページです。
+
+:::{.callout-note}
+## Information
+
+* Last Update: `r format(Sys.Date(), "%Y年%m月%d日")`
+* Environment
+   * macOS `r macos_ver` "Ventura"
+   * Firefox `r ff_ver`
+   * `r version$version.string`
+   * RStudio `r rs_ver1`
+   * Quarto `r quarto::quarto_inspect()$quarto$version`
+   * R package {quarto} `r packageVersion("quarto")`
+:::

@@ -1,0 +1,84 @@
+project:
+  type: website
+  output-dir: docs
+
+lang: ja
+
+website:
+  site-url: "https://www.jaysong.net/"
+  title: "DS4SS@Kandai"
+  page-footer: "Copyright 2023, Jaehyun Song. Powered by [Quarto](https://quarto.org/)"
+  google-analytics: "G-1GC6ZTS6FN"
+  favicon: "imgs/favicon.png"
+  navbar:
+    search: true
+    logo: "imgs/logo.png"
+    background: "#1955A6" # royal blue
+    left:
+      - text: "指導教員"
+        href: professor.qmd
+      - sidebar:about
+      - sidebar:entry
+      - sidebar:list
+      - sidebar:research
+      - sidebar:resources
+  sidebar: 
+    - id: about
+      title: "ゼミ紹介"
+      style: "docked"
+      contents: 
+        - text: "何をするゼミか"
+          href: about/about.qmd
+        - text: "求める人物像"
+          href: about/ideal.qmd
+        - text: "到達目標"
+          href: about/goal.qmd
+    - id: entry
+      title: "応募"
+      style: "docked"
+      contents: 
+        - text: "応募方法"
+          href: entry/entry.qmd
+        - text: "前提知識"
+          href: entry/prerequisite.qmd
+    - id: list
+      title: "ゼミ生"
+      contents:
+        - text: "1期生（2022年度入ゼミ）"
+          href: people/2022.qmd
+        - text: "2期生（2023年度入ゼミ）"
+          href: people/2023.qmd
+        - text: "3期生（2024年度入ゼミ）"
+          href: people/2024.qmd
+    - id: research
+      title: "研究"
+      contents:
+        - text: "1期生（2022年度入ゼミ）"
+          href: research/2022.qmd
+        - text: "2期生（2023年度入ゼミ）"
+          href: research/2023.qmd
+    - id: resources
+      title: "資料"
+      contents:
+        - text: "おすすめの資料"
+          href: resources/reading.qmd
+        - text: "学修ロードマップ"
+          href: resources/roadmap.qmd
+  twitter-card:
+    title: "Data Science for Social Science@Kandai"
+    description: "関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」 "
+    card-style: summary
+    creator: "@Tintstyle"
+    site: "@Tintstyle"
+    image: "imgs/favicon.png"
+  open-graph:
+    title: "Data Science for Social Science@Kandai"
+    description: "関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」 "
+    image: "imgs/favicon.png"
+
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css

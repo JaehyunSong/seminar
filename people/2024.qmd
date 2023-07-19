@@ -1,0 +1,10 @@
+---
+title: "3期生名簿（2024年入ゼミ）"
+date-modified: "`r Sys.Date()`"
+---
+
+```{r}
+#| include: false
+```
+
+![](Figs/WeWantYou.png){fig-align="center"}

@@ -1,0 +1,144 @@
+---
+title: "学修ロードマップ"
+date-modified: "`r Sys.Date()`"
+---
+
+```{r}
+#| include: false
+```
+
+```{r}
+#| echo: false
+pacman::p_load(tidyverse, gt)
+
+G1 <- tibble(Name     = c("Enjoy Computing", "統計学", "基礎数学（確率・統計）",
+                          "情報処理", "コンピュータの言語", "データサイエンスの基礎",
+                          "プログラミング入門", "ソフトウェア実習",
+                          "プログラミング基礎実習", "データリテラシー実習",
+                          "活用法を見聞するAI・データサイエンス",
+                          "活用法を体験するAI・データサイエンス"),
+             Type     = c("導入", "基礎", "基礎", "基幹", "基幹", "基幹", "展開",
+                          "実習", "実習", "実習", "共通教養", "共通教養"),
+             Required = c("必履修", "-", "-", "必修", "必修", "必修", "-",
+                          "必修", "-", "-", "-", "-"),
+             Category = c("-", "S、C", "S、C", "-", "-", "-", "M、S、C",
+                          "-", "M、S、C", "M、S", "-", "-"))
+
+G2 <- tibble(Name     = c("コンピュータシステムの基礎", "数値・数量解析",
+                          "アルゴリズム解析・設計", "プログラミング方法論",
+                          "プログラミング言語（C）",
+                          "オブジェクト指向プログラミング（Java）",
+                          "社会調査入門", "社会調査方法論", "調査データ分析",
+                          "質的調査法", "社会現象と数理モデル",
+                          "コンピュータ・シミュレーション",
+                          "社会シミュレーション",
+                          "科学リテラシー実習", "シミュレーション実習",
+                          "データ分析実習", "テキストマイニング実習",
+                          "質的調査実習", "プログラミング実習（C）",
+                          "プログラミング実習（Python）",
+                          "オブジェクト指向プログラミング実習（Java）",
+                          "AI・データエンジニアリング実践基礎",
+                          "社会のためのデータサイエンス実践基礎"),
+             Type     = c("基幹", "展開", "展開", "展開", "展開", "展開",
+                          "展開", "展開", "展開", "展開", "展開", "展開",
+                          "展開", "実習", "実習", "実習", "実習", "実習", "実習",
+                          "実習", "実習", "共通教養", "共通教養"),
+             Required = c("必修", "-", "-", "-", "-", "-", "-", "-", "-",
+                          "-", "-", "-", "-", "-", "-", "-", "-", "-", "-",
+                          "-", "-", "-", "-"),
+             Category = c("-", "C", "C", "C", "C", "C", "M、S", "M、S", "M、S",
+                          "M、S", "S、C", "S、C", "S、C", "M", "S、C", "M、S",
+                          "C", "M、S", "C", "C", "C", "-", "-"))
+
+G1 <- G1 |> 
+    mutate(Grade = c(rep("1年次以上", nrow(G1))),
+           .after = Name)
+
+G2 <- G2 |> 
+    mutate(Grade = c(rep("2年次以上", nrow(G2))),
+           .after = Name)
+
+bind_rows(list(G1, G2)) |> 
+    gt() |> 
+    cols_label("Name"     = "科目名",
+               "Grade"    = "学年",
+               "Type"     = "タイプ",
+               "Required" = "必須科目",
+               "Category" = "系") |> 
+    cols_align(columns = Grade:Category, align = "center") |> 
+    opt_interactive(
+        use_search = TRUE,
+        use_filters = TRUE,
+        use_resizers = TRUE,
+        use_highlight = TRUE,
+        use_compact_mode = TRUE,
+        use_text_wrapping = TRUE,
+        use_page_size_select = TRUE)
+```
+
+```{r}
+#| echo: false
+pacman::p_load(tidyverse, visNetwork)
+
+nodes <- tibble(id = 1:9,
+                label = c("統計学",
+                          "基礎数学（確率・統計）",
+                          "基礎数学（線形代数）",
+                          "基礎数学（代数）",
+                          "基礎数学（解析）",
+                          "データサイエンスの基礎",
+                          "プログラミング入門",
+                          "ミクロ政治データ分析実習",
+                          "マクロ政治データ分析実習"),
+                # add groups on nodes 
+                group = c("基礎・基幹（1年次）",
+                          "基礎・基幹（1年次）",
+                          "基礎・基幹（1年次）",
+                          "基礎・基幹（1年次）",
+                          "基礎・基幹（1年次）",
+                          "基礎・基幹（1年次）",
+                          "展開（1年次）",
+                          "実習（3年次）", 
+                          "実習（3年次）"))
+
+edges <- tibble(from = c(1, 1,
+                         2, 2,
+                         3, 3,
+                         4, 4,
+                         5, 5,
+                         6, 6,
+                         7, 7,
+                         8), 
+                to   = c(6, 9,
+                         6, 9,
+                         6, 9,
+                         6, 9,
+                         6, 9,
+                         8, 9,
+                         8, 9,
+                         9))
+
+visNetwork(nodes, edges) |> 
+    visEdges(arrows = "to") |> 
+    visGroups(groupname = "実習（1年次）", 
+              color = "#00798C", shape = "dot") |> 
+    visGroups(groupname = "実習（2年次）", 
+              color = "#D1495B", shape = "dot") |> 
+    visGroups(groupname = "実習（3年次）", 
+              color = "#EDAE49", shape = "dot") |> 
+    visGroups(groupname = "展開（1年次）", 
+              color = "#00798C", shape = "square") |> 
+    visGroups(groupname = "展開（2年次）", 
+              color = "#D1495B", shape = "square") |> 
+    visGroups(groupname = "展開（3年次）", 
+              color = "#EDAE49", shape = "square") |> 
+    visGroups(groupname = "基礎・基幹（1年次）", 
+              color = "#00798C", shape = "triangle") |> 
+    visGroups(groupname = "基礎・基幹（2年次）", 
+              color = "#D1495B", shape = "triangle") |> 
+    visGroups(groupname = "基礎・基幹（3年次）", 
+              color = "#EDAE49", shape = "triangle") |> 
+    visNodes(color = list(highlight = "yellow",
+                          border    = "black")) |> 
+    visLegend()
+```

@@ -1,0 +1,72 @@
+---
+title: "宋ゼミについて"
+date-modified: "`r Sys.Date()`"
+toc: true
+link-external-newwindow: true
+link-external-icon: true
+---
+
+## 何をするゼミか
+
+　本ゼミは社会現象のデータ分析（+美味しい飲食店情報の共有）を主な内容とします。ここでは一つの例を見ながら考えてみましょう（宋の専門は政治学であるため、政治の例を挙げます）。
+
+　2016年度の参院選から18歳投票権が導入されました。若者の政治参加が期待されている中、選挙後年齢別投票率が公開されました。以下のグラフは都道府県別に投票率を示したものです。
+
+```{r}
+#| echo: false
+#| message: false
+#| dpi: 300
+#| fig-width: 8
+#| fig.height: 4
+pacman::p_load(tidyverse)
+df <- read_csv("Data/18Turnout.csv")
+df %>%
+   arrange(desc(Others)) %>%
+   mutate(Pref = fct_inorder(Pref)) %>%
+   pivot_longer(cols = c(Young18, Young19, Others),
+                names_to = "Type",
+                values_to = "Turnout") %>%
+   mutate(Type = case_when(Type == "Young18" ~ "18歳",
+                           Type == "Young19" ~ "19歳",
+                           TRUE              ~ "20歳以上"),
+          High = if_else(Pref %in% c("東京都", "神奈川県", "愛知県",
+                                     "千葉県", "埼玉県"), 
+                         "red", "blue")) %>%
+   ggplot() +
+   geom_segment(aes(x = Pref, xend = Pref, y = 0, yend = Turnout,
+                    color = High, linetype = High)) +
+   geom_point(aes(x = Pref, y = Turnout, fill = Type),
+              shape = 21, size = 3) +
+   guides(linetype = "none", color = "none") +
+   scale_color_manual(values = c("red" = "red", "blue" = "gray50")) +
+   scale_linetype_manual(values = c("red" = 1, "blue" = 3)) +
+   labs(x = "都道府県", y = "投票率 (%)", fill = "",
+        title = "年齢別投票率 (2016年参院選)") +
+   theme_bw(base_family = "HiraKakuProN-W3") +
+   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
+         legend.position = "bottom",
+         panel.grid.major.x = element_blank())
+```
+
+　これまで日本では都市部の投票率が低く、非都市部の投票率が高いと言われていました。実際、これまで参政権を有していた20歳以上に限定してみると（青い棒）、長野、島根、山形当たりが最上位となります。一方、都市部の東京はやや高めでしたが、その他の大阪、愛知、千葉当たりの投票率は低い傾向を示しています。しかし、18歳の投票率はそうではありませんでした。最も高いトップ3は東京、神奈川、愛知といった都市部でした。若者ほど投票に参加しないのが長年の観察から得られた傾向ですが、これらの都道府県は18歳の投票率が20歳以上の投票率を凌駕しています。これはなぜでしょうか。
+
+　他にも様々な問いが考えられます。我々が街中で見る「投票に行きましょう」ポスター、これは本当に効果があるでしょうか。世論調査と実際の選挙結果がずれることはなぜでしょうか。みんな仲良くすれば良いのに、なぜ戦争が起こるでしょうか。
+
+　このように社会には「なぜ？」や「本当に？」といった謎（**パズル**）がいっぱいあります。本ゼミはこのような社会における謎を対象に、データを用いた実証分析を行います。近年、データの重要性が高まっており、データサイエンティストの需要が急増しています。データは社会の謎を解く一つの鍵でありながら、より良い社会を実現するための鍵でもあります。データを有効活用するためにはデータ分析そのものの発展も不可欠です。本ゼミでは2年間にわたって（１）**問題を発見**し、（２）**問いを設定**し、（３）**問いに対する答えを導き出すためのスキル**を身につけることを目標とします。
+
+## ゼミの内容
+
+#### 専門演習（3回生）
+
+* 前期
+   * 文献輪読（リサーチデザインと因果推論に関する入門書）
+   * 分析ツール（R）の使い方の習得
+   * データ分析の基礎
+* 後期
+   * 学術論文の輪読
+   * グループ単位の共同研究と発表
+
+#### 卒業研究（4回生）
+
+* 卒論に向けた個人研究
+* 前期は主にリサーチデザイン（テーマ決め、先行研究のレビューなど）、後期はデータ収集と分析、執筆を行います。
