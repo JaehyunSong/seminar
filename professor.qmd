@@ -3,12 +3,13 @@ title: "担当教員について"
 date-modified: "`r Sys.Date()`"
 toc: true
 link-external-newwindow: true
-link-external-icon: true
 ---
 
 ```{r}
 #| include: false
 ```
+
+<center><a href="https://www.jaysong.net/" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;担当教員のホームページへ</a></center>
 
 ## 基本情報
 
@@ -31,19 +32,27 @@ link-external-icon: true
 
 #### 職歴
 
-* 2022年度〜：関西大学総合情報学部　准教授
-* 2021年度：同志社大学文化情報学部　助教
-* 2019〜2020年度：早稲田大学高等研究所　講師
+* 2022年度〜：[関西大学](https://www.kansai-u.ac.jp/)[総合情報学部](https://www.kansai-u.ac.jp/Fc_inf/)　准教授
+* 2021年度：[同志社大学](https://www.doshisha.ac.jp/)[文化情報学部](https://www.cis.doshisha.ac.jp/)　助教
+* 2019〜2020年度：[早稲田大学](https://www.waseda.jp/)[高等研究所](https://www.waseda.jp/inst/wias/)　講師
 
 #### 学歴
 
-* 2015〜2017年度：神戸大学法学研究科　博士課程後期課程
+* 2015〜2017年度：[神戸大学](http://www.kobe-u.ac.jp/)[法学研究科](http://www.law.kobe-u.ac.jp/)　博士課程後期課程
    * 博士（政治学）
       * 博士論文：「争点空間の歪みと有権者の選択―伸縮近接性モデルによる争点投票理論の統合―」
-* 2012〜2014年度：神戸大学法学研究科　博士課程前期課程
+* 2012〜2014年度：[神戸大学](http://www.kobe-u.ac.jp/)[法学研究科](http://www.law.kobe-u.ac.jp/)　博士課程前期課程
    * 修士（政治学）
       * 修士論文：「韓国は地域主義を超えられるか―選挙公約の役割の実証分析―」
    * 2012年度：語学留学（アメリカ）
-* 2006〜2011年度：慶應義塾大学法学部政治学科
+* 2006〜2011年度：[慶應義塾大学](https://www.keio.ac.jp/ja/)[法学部政治学科](https://www.law.keio.ac.jp/)
    * 学士（法学）
    * 2009〜2010年度：兵役による休学
+* 2002〜2004年度：[東国大学校師範大学附属高等学校](https://ddbk.sen.hs.kr/)
+
+## 連絡先
+
+* E-mail: song<i class="bi bi-at"></i>kansai-u.ac.jp
+* Homepage: <https://www.jaysong.net>
+* 個人研究室：TA227（A棟2階）
+   * 研究室を訪問される際は、必ず事前にメール等で予約してください。

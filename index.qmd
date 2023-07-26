@@ -16,7 +16,7 @@ rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applica
 macos_ver <- system('sw_vers -productVersion', intern = TRUE)
 ```
 
-関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」のホームページです。
+関西大学総合情報学部「専門演習＆卒業研究（宋）」のホームページです。本ページはスマホ等のモバイルデバイスで閲覧可能ですが、PC画面での閲覧を推奨します。
 
 :::{.callout-note}
 ## Information
