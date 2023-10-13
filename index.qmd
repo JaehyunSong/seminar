@@ -12,18 +12,30 @@ ff_ver <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applicat
 rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applications/RStudio.app/Contents/Info.plist -o -', intern = TRUE) |>
   stringr::str_replace("-daily", "") |>
   stringr::str_extract("202[0-9]\\.[0-9]+\\.[0-9]+\\+[0-9]+")
-
-macos_ver <- system('sw_vers -productVersion', intern = TRUE)
 ```
 
 関西大学総合情報学部「専門演習＆卒業研究（宋）」のホームページです。本ページはスマホ等のモバイルデバイスで閲覧可能ですが、PC画面での閲覧を推奨します。
 
-:::{.callout-note}
-## Information
+<center><a href="https://airrsv.net/song2022/calendar" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center>
 
-* Last Update: `r format(Sys.Date(), "%Y年%m月%d日")`
-* Environment
-   * macOS `r macos_ver` "Ventura"
+:::{.callout-important}
+## 合同オフィスアワーに参加された方へ
+
+　合同オフィスアワーに参加された方でも、本ゼミに申し込む予定のある方は個別オフィスアワーにもご参加ください。
+:::
+
+:::{.callout-important}
+## 設定された枠外のオフィスアワーを希望される方へ
+
+　予約サイトにない枠（時間帯）でも対応可能です。宋にe-mailください（<song@kansai-u.ac.jp>）。
+:::
+
+:::{.callout-note}
+## ページ情報
+
+* 最終更新日: `r format(Sys.Date(), "%Y年%m月%d日")`
+* 開発環境
+   * `r sessionInfo()$running`
    * Firefox `r ff_ver`
    * `r version$version.string`
    * RStudio `r rs_ver1`
