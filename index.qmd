@@ -16,13 +16,40 @@ rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applica
 
 関西大学総合情報学部「専門演習＆卒業研究（宋）」のホームページです。本ページはスマホ等のモバイルデバイスで閲覧可能ですが、PC画面での閲覧を推奨します。
 
-<center><a href="https://airrsv.net/song2022/calendar" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center>
-
 :::{.callout-important}
 ## 合同オフィスアワーに参加された方へ
 
 　合同オフィスアワーに参加された方でも、本ゼミに申し込む予定のある方は個別オフィスアワーにもご参加ください。
 :::
+
+<center><a href="https://airrsv.net/song2022/calendar" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center>
+
+```{r}
+#| echo: false
+pacman::p_load(tidyverse, DT)
+tibble(Date  = c("10/13", "10/14", "10/14", "10/17", "10/17"),
+       Week  = c("月", "火", "火", "金", "金"),
+       Time1 = c("3限", "昼休み", "3限", "昼休み", "3限"),
+       Place = c("TA227", "TA227", "TA227", "TA227", "TA227"),
+       Etc   = c()) |> 
+   mutate(Date  = paste0("2023/", Date),
+          Date  = as.Date(Date),
+          Week  = factor(Week, levels = c("月", "火", "水", "木", "金")),
+          Time1 = factor(Time1, levels = c("2限", "昼休み", "3限", "4限")),
+          Time2 = case_when(Time1 == "2限" ~ "10:40",
+                            Time1 == "3限" ~ "13:00",
+                            Time1 == "4限" ~ "14:40",
+                            TRUE           ~ "12:15"),
+          Place = factor(Place, levels = c("TA227", "TK108")),
+          Etc   = if_else(Place == "TK108", "ゼミ室", "")) |> 
+   relocate(Time2, .after = Time1) |> 
+   datatable(filter   = "top",
+             colnames = c("日付", "曜日", "時間", "開始時間", "場所", "備考"),
+             options  = list(autoWidth  = TRUE,
+                             paging     = FALSE,
+                             searching  = FALSE,
+                             ordering   = FALSE))
+```
 
 :::{.callout-important}
 ## 設定された枠外のオフィスアワーを希望される方へ
