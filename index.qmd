@@ -27,8 +27,8 @@ rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applica
 ```{r}
 #| echo: false
 pacman::p_load(tidyverse, DT)
-tibble(Date  = c("10/13", "10/14", "10/14", "10/16",
-                 "10/17", "10/17", "10/17"),
+tibble(Date  = c("11/13", "11/14", "11/14", "11/16",
+                 "11/17", "11/17", "11/17"),
        Week  = c("月", "火", "火", "木", "金", "金", "金"),
        Time1 = c("3限", "昼休み", "4限", "昼休み", 
                  "昼休み", "3限", "4限"),
