@@ -17,15 +17,14 @@ rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applica
 関西大学総合情報学部「専門演習＆卒業研究（宋）」のホームページです。本ページはスマホ等のモバイルデバイスで閲覧可能ですが、PC画面での閲覧を推奨します。
 
 :::{.callout-important}
-## 合同オフィスアワーに参加された方へ
+## 2024年度入ゼミについて
 
-　合同オフィスアワーに参加された方でも、本ゼミに申し込む予定のある方は個別オフィスアワーにもご参加ください。
+　2024年度ゼミ生募集は終了しました。
 :::
-
-<center><a href="https://airrsv.net/song2022/calendar" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center>
 
 ```{r}
 #| echo: false
+#| eval: false
 pacman::p_load(tidyverse, DT)
 tibble(Date  = c("11/13", "11/14", "11/14", "11/16",
                  "11/17", "11/17", "11/17"),
@@ -53,12 +52,6 @@ tibble(Date  = c("11/13", "11/14", "11/14", "11/16",
                              searching  = FALSE,
                              ordering   = FALSE))
 ```
-
-:::{.callout-important}
-## 設定された枠外のオフィスアワーを希望される方へ
-
-　予約サイトにない枠（時間帯）でも対応可能です。宋にe-mailください（<song@kansai-u.ac.jp>）。
-:::
 
 :::{.callout-note}
 ## ページ情報

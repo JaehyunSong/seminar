@@ -5,7 +5,15 @@ link-external-newwindow: true
 toc: true
 ---
 
+<!--
 <center><a href="https://airrsv.net/song2022/calendar" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center>
+-->
+
+:::{.callout-important}
+## 以下の内容は過去のものです。
+
+　**2024年度ゼミ生募集は終了**しました。2025年度入ゼミについては2024年9月中に公開します。
+:::
 
 :::{.callout-important}
 ## 合同オフィスアワーに参加された方へ
@@ -32,6 +40,7 @@ toc: true
 
 ```{r}
 #| echo: false
+#| eval: false
 pacman::p_load(tidyverse, DT)
 tibble(Date  = c("11/13", "11/14", "11/14", "11/16",
                  "11/17", "11/17", "11/17"),
