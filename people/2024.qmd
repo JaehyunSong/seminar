@@ -1,11 +1,7 @@
 ---
 title: "3期生名簿（2024年入ゼミ）"
-date-modified: "`r Sys.Date()`"
+date-modified: today
 ---
-
-```{r}
-#| include: false
-```
 
 * 亀田悠介（かめだ・こうすけ）さん
 * 斎藤壮真（さいとう・そうま）さん

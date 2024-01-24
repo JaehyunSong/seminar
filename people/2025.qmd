@@ -1,10 +1,6 @@
 ---
 title: "4期生名簿（2025年入ゼミ）"
-date-modified: "`r Sys.Date()`"
+date-modified: today
 ---
-
-```{r}
-#| include: false
-```
 
 ![](Figs/WeWantYou.png){fig-align="center"}
