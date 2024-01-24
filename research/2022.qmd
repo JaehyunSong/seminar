@@ -1,10 +1,12 @@
 ---
 title: "研究テーマ（1期生）"
-date-modified: "`r Sys.Date()`"
+date-modified: today
 ---
 
 ```{r}
 #| include: false
+pacman::p_load(tidyverse, gt)
+df <- read_csv("data/list.csv")
 ```
 
 ## グループ研究（3回生）
@@ -16,14 +18,19 @@ date-modified: "`r Sys.Date()`"
 
 ## 卒業研究（4回生）
 
-* ロシアーウクライナ戦争がもたらした周辺国の旗下結集効果
-* 排外主義的態度と幸福度
-* 坂道グループの歌詞分析
-* 好きなキャラクターと性格の関係
-* e-sports選手の年齢とパフォーマンスの関係
-* なぜ人々は「名物」に財布の紐が緩むのか
-* 通勤時間が幸福度に与える影響
-* ゲームと社会性
-* 候補者の見た目と投票選択
-* 朝に弱い人の特徴
-* セイバーメトリクスを活用したプロ野球データ分析
+```{r}
+#| echo: false
+df |> 
+    arrange(ID) |> 
+    mutate(File = paste0("abstract/", Year, "/", File, ".pdf")) |> 
+    select(-Year, -ID) |> 
+    gt() |> 
+    fmt_url(columns = File, as_button = TRUE, label = "PDF") |> 
+    fmt_markdown(columns = Title) |> 
+    cols_label("Name"  = "氏名",
+               "Title" = "題目",
+               "File"  = "概要") |> 
+    cols_align(columns = File, align = "center") |> 
+    cols_width(Name  ~ px(150),
+               File  ~ px(150))
+```

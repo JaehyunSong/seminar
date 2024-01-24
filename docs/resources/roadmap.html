@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.545">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "サーチ"
@@ -71,12 +78,11 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
 </script>
-
 <script src="../site_libs/core-js-2.5.3/shim.min.js"></script>
 <script src="../site_libs/react-18.2.0/react.min.js"></script>
 <script src="../site_libs/react-18.2.0/react-dom.min.js"></script>
 <script src="../site_libs/reactwidget-1.0.0/react-tools.js"></script>
-<script src="../site_libs/htmlwidgets-1.6.3/htmlwidgets.js"></script>
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="../site_libs/reactable-0.4.4/reactable.css" rel="stylesheet">
 <script src="../site_libs/reactable-binding-0.4.4/reactable.js"></script>
 
@@ -85,7 +91,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
 <meta property="og:title" content="Data Science for Social Science@Kandai">
 <meta property="og:description" content="関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」">
 <meta property="og:image" content="https://www.jaysong.net/resources/imgs/favicon.png">
-<meta property="og:site-name" content="DS4SS@Kandai">
+<meta property="og:site_name" content="DS4SS@Kandai">
 <meta name="twitter:title" content="Data Science for Social Science@Kandai">
 <meta name="twitter:description" content="関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」">
 <meta name="twitter:image" content="https://www.jaysong.net/resources/imgs/favicon.png">
@@ -98,9 +104,9 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../imgs/logo.png" alt="" class="navbar-logo">
     </a>
@@ -115,122 +121,122 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../professor.html" rel="" target="">
- <span class="menu-text">指導教員</span></a>
+    <a class="nav-link" href="../professor.html"> 
+<span class="menu-text">指導教員</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">ゼミ紹介</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
         <li>
-    <a class="dropdown-item" href="../about/about.html" rel="" target="">
+    <a class="dropdown-item" href="../about/about.html">
  <span class="dropdown-text">何をするゼミか</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/ideal.html" rel="" target="">
+    <a class="dropdown-item" href="../about/ideal.html">
  <span class="dropdown-text">求める人物像</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../about/goal.html" rel="" target="">
+    <a class="dropdown-item" href="../about/goal.html">
  <span class="dropdown-text">到達目標</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--1" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">応募</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu--1">    
         <li>
-    <a class="dropdown-item" href="../entry/entry.html" rel="" target="">
+    <a class="dropdown-item" href="../entry/entry.html">
  <span class="dropdown-text">応募方法</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../entry/prerequisite.html" rel="" target="">
+    <a class="dropdown-item" href="../entry/prerequisite.html">
  <span class="dropdown-text">前提知識</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--2" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">ゼミ生</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu--2">    
         <li>
-    <a class="dropdown-item" href="../people/2022.html" rel="" target="">
+    <a class="dropdown-item" href="../people/2022.html">
  <span class="dropdown-text">1期生（2022年度入ゼミ）</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people/2023.html" rel="" target="">
+    <a class="dropdown-item" href="../people/2023.html">
  <span class="dropdown-text">2期生（2023年度入ゼミ）</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people/2024.html" rel="" target="">
+    <a class="dropdown-item" href="../people/2024.html">
  <span class="dropdown-text">3期生（2024年度入ゼミ）</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people/2025.html" rel="" target="">
+    <a class="dropdown-item" href="../people/2025.html">
  <span class="dropdown-text">4期生（2025年度入ゼミ）</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--3" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">研究</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu--3">    
         <li>
-    <a class="dropdown-item" href="../research/2022.html" rel="" target="">
+    <a class="dropdown-item" href="../research/2022.html">
  <span class="dropdown-text">1期生（2022年度入ゼミ）</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../research/2023.html" rel="" target="">
+    <a class="dropdown-item" href="../research/2023.html">
  <span class="dropdown-text">2期生（2023年度入ゼミ）</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../research/2024.html" rel="" target="">
+    <a class="dropdown-item" href="../research/2024.html">
  <span class="dropdown-text">3期生（2024年度入ゼミ）</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--4" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">資料</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu--4">    
         <li>
-    <a class="dropdown-item" href="../resources/reading.html" rel="" target="">
+    <a class="dropdown-item" href="../resources/reading.html">
  <span class="dropdown-text">おすすめの資料</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../resources/roadmap.html" rel="" target="">
+    <a class="dropdown-item" href="../resources/roadmap.html">
  <span class="dropdown-text">学修ロードマップ</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="ダークモードの切り替え"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/roadmap.html">学修ロードマップ</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/roadmap.html">学修ロードマップ</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -248,7 +254,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
@@ -268,36 +274,37 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">更新日</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2023年11月29日</p>
+      <p class="date-modified">2024年1月24日</p>
     </div>
   </div>
     
   </div>
   
 
+
 </header>
+
 
 <p>　本ゼミと関係があると考えられる科目の一覧です。</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="uasfsccvay" class=".gt_table" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#uasfsccvay table {
+<div id="gpnwtlbbac" class=".gt_table" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gpnwtlbbac table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#uasfsccvay thead, #uasfsccvay tbody, #uasfsccvay tfoot, #uasfsccvay tr, #uasfsccvay td, #uasfsccvay th {
+#gpnwtlbbac thead, #gpnwtlbbac tbody, #gpnwtlbbac tfoot, #gpnwtlbbac tr, #gpnwtlbbac td, #gpnwtlbbac th {
   border-style: none;
 }
 
-#uasfsccvay p {
+#gpnwtlbbac p {
   margin: 0;
   padding: 0;
 }
 
-#uasfsccvay .gt_table {
+#gpnwtlbbac .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -323,12 +330,12 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-left-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_caption {
+#gpnwtlbbac .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#uasfsccvay .gt_title {
+#gpnwtlbbac .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -340,7 +347,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-bottom-width: 0;
 }
 
-#uasfsccvay .gt_subtitle {
+#gpnwtlbbac .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -352,7 +359,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-top-width: 0;
 }
 
-#uasfsccvay .gt_heading {
+#gpnwtlbbac .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -364,13 +371,13 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_bottom_border {
+#gpnwtlbbac .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_col_headings {
+#gpnwtlbbac .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -385,7 +392,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_col_heading {
+#gpnwtlbbac .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -405,7 +412,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#uasfsccvay .gt_column_spanner_outer {
+#gpnwtlbbac .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -417,15 +424,15 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   padding-right: 4px;
 }
 
-#uasfsccvay .gt_column_spanner_outer:first-child {
+#gpnwtlbbac .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#uasfsccvay .gt_column_spanner_outer:last-child {
+#gpnwtlbbac .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#uasfsccvay .gt_column_spanner {
+#gpnwtlbbac .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -437,11 +444,11 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   width: 100%;
 }
 
-#uasfsccvay .gt_spanner_row {
+#gpnwtlbbac .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#uasfsccvay .gt_group_heading {
+#gpnwtlbbac .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -467,7 +474,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   text-align: left;
 }
 
-#uasfsccvay .gt_empty_group_heading {
+#gpnwtlbbac .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -482,15 +489,15 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   vertical-align: middle;
 }
 
-#uasfsccvay .gt_from_md > :first-child {
+#gpnwtlbbac .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#uasfsccvay .gt_from_md > :last-child {
+#gpnwtlbbac .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#uasfsccvay .gt_row {
+#gpnwtlbbac .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -509,7 +516,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   overflow-x: hidden;
 }
 
-#uasfsccvay .gt_stub {
+#gpnwtlbbac .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -522,7 +529,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uasfsccvay .gt_stub_row_group {
+#gpnwtlbbac .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -536,15 +543,15 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   vertical-align: top;
 }
 
-#uasfsccvay .gt_row_group_first td {
+#gpnwtlbbac .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#uasfsccvay .gt_row_group_first th {
+#gpnwtlbbac .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#uasfsccvay .gt_summary_row {
+#gpnwtlbbac .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -554,16 +561,16 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uasfsccvay .gt_first_summary_row {
+#gpnwtlbbac .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_first_summary_row.thick {
+#gpnwtlbbac .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#uasfsccvay .gt_last_summary_row {
+#gpnwtlbbac .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -573,7 +580,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_grand_summary_row {
+#gpnwtlbbac .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -583,7 +590,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uasfsccvay .gt_first_grand_summary_row {
+#gpnwtlbbac .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -593,7 +600,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-top-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_last_grand_summary_row_top {
+#gpnwtlbbac .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -603,11 +610,11 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_striped {
+#gpnwtlbbac .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#uasfsccvay .gt_table_body {
+#gpnwtlbbac .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -616,7 +623,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-bottom-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_footnotes {
+#gpnwtlbbac .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -630,7 +637,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_footnote {
+#gpnwtlbbac .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -639,7 +646,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uasfsccvay .gt_sourcenotes {
+#gpnwtlbbac .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -653,7 +660,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   border-right-color: #D3D3D3;
 }
 
-#uasfsccvay .gt_sourcenote {
+#gpnwtlbbac .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -661,68 +668,68 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
   padding-right: 5px;
 }
 
-#uasfsccvay .gt_left {
+#gpnwtlbbac .gt_left {
   text-align: left;
 }
 
-#uasfsccvay .gt_center {
+#gpnwtlbbac .gt_center {
   text-align: center;
 }
 
-#uasfsccvay .gt_right {
+#gpnwtlbbac .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#uasfsccvay .gt_font_normal {
+#gpnwtlbbac .gt_font_normal {
   font-weight: normal;
 }
 
-#uasfsccvay .gt_font_bold {
+#gpnwtlbbac .gt_font_bold {
   font-weight: bold;
 }
 
-#uasfsccvay .gt_font_italic {
+#gpnwtlbbac .gt_font_italic {
   font-style: italic;
 }
 
-#uasfsccvay .gt_super {
+#gpnwtlbbac .gt_super {
   font-size: 65%;
 }
 
-#uasfsccvay .gt_footnote_marks {
+#gpnwtlbbac .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#uasfsccvay .gt_asterisk {
+#gpnwtlbbac .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#uasfsccvay .gt_indent_1 {
+#gpnwtlbbac .gt_indent_1 {
   text-indent: 5px;
 }
 
-#uasfsccvay .gt_indent_2 {
+#gpnwtlbbac .gt_indent_2 {
   text-indent: 10px;
 }
 
-#uasfsccvay .gt_indent_3 {
+#gpnwtlbbac .gt_indent_3 {
   text-indent: 15px;
 }
 
-#uasfsccvay .gt_indent_4 {
+#gpnwtlbbac .gt_indent_4 {
   text-indent: 20px;
 }
 
-#uasfsccvay .gt_indent_5 {
+#gpnwtlbbac .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<div id="uasfsccvay" class="reactable html-widget" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="uasfsccvay">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Name":["Enjoy Computing","統計学","基礎数学（確率・統計）","情報処理","コンピュータの言語","データサイエンスの基礎","プログラミング入門","ソフトウェア実習","プログラミング基礎実習","データリテラシー実習","活用法を見聞するAI・データサイエンス","活用法を体験するAI・データサイエンス","コンピュータシステムの基礎","数値・数量解析","アルゴリズム解析・設計","プログラミング方法論","プログラミング言語（C）","オブジェクト指向プログラミング（Java）","社会調査入門","社会調査方法論","調査データ分析","質的調査法","社会現象と数理モデル","コンピュータ・シミュレーション","社会シミュレーション","科学リテラシー実習","シミュレーション実習","データ分析実習","テキストマイニング実習","質的調査実習","プログラミング実習（C）","プログラミング実習（Python）","オブジェクト指向プログラミング実習（Java）","AI・データエンジニアリング実践基礎","社会のためのデータサイエンス実践基礎","自然言語処理","人工知能","ベクトル解析","関数解析","数学演習（解析）","数学演習（線形代数）","行動科学実習（心理尺度構成）","機械学習実習","ミクロ政治データ分析実習","マクロ政治データ分析実習","経済情報処理実習","経営情報処理実習","経営データ分析実習","経営分析実習"],"Grade":["1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上"],"Type":["導入","基礎","基礎","基幹","基幹","基幹","展開","実習","実習","実習","共通教養","共通教養","基幹","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","実習","実習","実習","実習","実習","実習","実習","実習","共通教養","共通教養","展開","展開","展開","展開","展開","展開","実習","実習","実習","実習","実習","実習","実習","実習"],"Required":["必履修","-","-","必修","必修","必修","-","必修","-","-","-","-","必修","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-"],"Category":["-","S、C","S、C","-","-","-","M、S、C","-","M、S、C","M、S","-","-","-","C","C","C","C","C","M、S","M、S","M、S","M、S","S、C","S、C","S、C","M","S、C","M、S","C","M、S","C","C","C","-","-","C","C","C","C","C","C","M、S","C","S","S","S","S","S、C","S"]},"columns":[{"id":"Name","name":"科目名","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["Enjoy Computing","統計学","基礎数学（確率・統計）","情報処理","コンピュータの言語","データサイエンスの基礎","プログラミング入門","ソフトウェア実習","プログラミング基礎実習","データリテラシー実習","活用法を見聞するAI・データサイエンス","活用法を体験するAI・データサイエンス","コンピュータシステムの基礎","数値・数量解析","アルゴリズム解析・設計","プログラミング方法論","プログラミング言語（C）","オブジェクト指向プログラミング（Java）","社会調査入門","社会調査方法論","調査データ分析","質的調査法","社会現象と数理モデル","コンピュータ・シミュレーション","社会シミュレーション","科学リテラシー実習","シミュレーション実習","データ分析実習","テキストマイニング実習","質的調査実習","プログラミング実習（C）","プログラミング実習（Python）","オブジェクト指向プログラミング実習（Java）","AI・データエンジニアリング実践基礎","社会のためのデータサイエンス実践基礎","自然言語処理","人工知能","ベクトル解析","関数解析","数学演習（解析）","数学演習（線形代数）","行動科学実習（心理尺度構成）","機械学習実習","ミクロ政治データ分析実習","マクロ政治データ分析実習","経済情報処理実習","経営情報処理実習","経営データ分析実習","経営分析実習"],"html":true,"align":"left","headerStyle":{"font-weight":"normal"}},{"id":"Grade","name":"学年","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上"],"html":true,"align":"center","headerStyle":{"font-weight":"normal"}},{"id":"Type","name":"タイプ","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["導入","基礎","基礎","基幹","基幹","基幹","展開","実習","実習","実習","共通教養","共通教養","基幹","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","実習","実習","実習","実習","実習","実習","実習","実習","共通教養","共通教養","展開","展開","展開","展開","展開","展開","実習","実習","実習","実習","実習","実習","実習","実習"],"html":true,"align":"center","headerStyle":{"font-weight":"normal"}},{"id":"Required","name":"必須科目","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["必履修","-","-","必修","必修","必修","-","必修","-","-","-","-","必修","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-"],"html":true,"align":"center","headerStyle":{"font-weight":"normal"}},{"id":"Category","name":"系","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["-","S、C","S、C","-","-","-","M、S、C","-","M、S、C","M、S","-","-","-","C","C","C","C","C","M、S","M、S","M、S","M、S","S、C","S、C","S、C","M","S、C","M、S","C","M、S","C","C","C","-","-","C","C","C","C","C","C","M、S","C","S","S","S","S","S、C","S"],"html":true,"align":"center","headerStyle":{"font-weight":"normal"}}],"resizable":true,"filterable":true,"searchable":true,"defaultPageSize":10,"showPageSizeOptions":true,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPagination":true,"showPageInfo":true,"minRows":1,"highlight":true,"compact":true,"showSortable":true,"height":"auto","theme":{"color":"#333333","backgroundColor":"#FFFFFF","stripedColor":"rgba(128,128,128,0.05)","style":{"fontFamily":"system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"},"headerStyle":{"borderTopStyle":"solid","borderTopWidth":"2px","borderTopColor":"#D3D3D3","borderBottomStyle":"solid","borderBottomWidth":"2px","borderBottomColor":"#D3D3D3"}},"elementId":"uasfsccvay","dataKey":"194543d5006dc8c637173a5007cab311"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="gpnwtlbbac" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="gpnwtlbbac">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Name":["Enjoy Computing","統計学","基礎数学（確率・統計）","情報処理","コンピュータの言語","データサイエンスの基礎","プログラミング入門","ソフトウェア実習","プログラミング基礎実習","データリテラシー実習","活用法を見聞するAI・データサイエンス","活用法を体験するAI・データサイエンス","コンピュータシステムの基礎","数値・数量解析","アルゴリズム解析・設計","プログラミング方法論","プログラミング言語（C）","オブジェクト指向プログラミング（Java）","社会調査入門","社会調査方法論","調査データ分析","質的調査法","社会現象と数理モデル","コンピュータ・シミュレーション","社会シミュレーション","科学リテラシー実習","シミュレーション実習","データ分析実習","テキストマイニング実習","質的調査実習","プログラミング実習（C）","プログラミング実習（Python）","オブジェクト指向プログラミング実習（Java）","AI・データエンジニアリング実践基礎","社会のためのデータサイエンス実践基礎","自然言語処理","人工知能","ベクトル解析","関数解析","数学演習（解析）","数学演習（線形代数）","行動科学実習（心理尺度構成）","機械学習実習","ミクロ政治データ分析実習","マクロ政治データ分析実習","経済情報処理実習","経営情報処理実習","経営データ分析実習","経営分析実習"],"Grade":["1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上"],"Type":["導入","基礎","基礎","基幹","基幹","基幹","展開","実習","実習","実習","共通教養","共通教養","基幹","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","実習","実習","実習","実習","実習","実習","実習","実習","共通教養","共通教養","展開","展開","展開","展開","展開","展開","実習","実習","実習","実習","実習","実習","実習","実習"],"Required":["必履修","-","-","必修","必修","必修","-","必修","-","-","-","-","必修","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-"],"Category":["-","S、C","S、C","-","-","-","M、S、C","-","M、S、C","M、S","-","-","-","C","C","C","C","C","M、S","M、S","M、S","M、S","S、C","S、C","S、C","M","S、C","M、S","C","M、S","C","C","C","-","-","C","C","C","C","C","C","M、S","C","S","S","S","S","S、C","S"]},"columns":[{"id":"Name","name":"科目名","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["Enjoy Computing","統計学","基礎数学（確率・統計）","情報処理","コンピュータの言語","データサイエンスの基礎","プログラミング入門","ソフトウェア実習","プログラミング基礎実習","データリテラシー実習","活用法を見聞するAI・データサイエンス","活用法を体験するAI・データサイエンス","コンピュータシステムの基礎","数値・数量解析","アルゴリズム解析・設計","プログラミング方法論","プログラミング言語（C）","オブジェクト指向プログラミング（Java）","社会調査入門","社会調査方法論","調査データ分析","質的調査法","社会現象と数理モデル","コンピュータ・シミュレーション","社会シミュレーション","科学リテラシー実習","シミュレーション実習","データ分析実習","テキストマイニング実習","質的調査実習","プログラミング実習（C）","プログラミング実習（Python）","オブジェクト指向プログラミング実習（Java）","AI・データエンジニアリング実践基礎","社会のためのデータサイエンス実践基礎","自然言語処理","人工知能","ベクトル解析","関数解析","数学演習（解析）","数学演習（線形代数）","行動科学実習（心理尺度構成）","機械学習実習","ミクロ政治データ分析実習","マクロ政治データ分析実習","経済情報処理実習","経営情報処理実習","経営データ分析実習","経営分析実習"],"html":true,"align":"left","headerStyle":{"font-weight":"normal"}},{"id":"Grade","name":"学年","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","1年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","2年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上","3年次以上"],"html":true,"align":"center","headerStyle":{"font-weight":"normal"}},{"id":"Type","name":"タイプ","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["導入","基礎","基礎","基幹","基幹","基幹","展開","実習","実習","実習","共通教養","共通教養","基幹","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","展開","実習","実習","実習","実習","実習","実習","実習","実習","共通教養","共通教養","展開","展開","展開","展開","展開","展開","実習","実習","実習","実習","実習","実習","実習","実習"],"html":true,"align":"center","headerStyle":{"font-weight":"normal"}},{"id":"Required","name":"必須科目","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["必履修","-","-","必修","必修","必修","-","必修","-","-","-","-","必修","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-"],"html":true,"align":"center","headerStyle":{"font-weight":"normal"}},{"id":"Category","name":"系","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["-","S、C","S、C","-","-","-","M、S、C","-","M、S、C","M、S","-","-","-","C","C","C","C","C","M、S","M、S","M、S","M、S","S、C","S、C","S、C","M","S、C","M、S","C","M、S","C","C","C","-","-","C","C","C","C","C","C","M、S","C","S","S","S","S","S、C","S"],"html":true,"align":"center","headerStyle":{"font-weight":"normal"}}],"resizable":true,"filterable":true,"searchable":true,"defaultPageSize":10,"showPageSizeOptions":true,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPagination":true,"showPageInfo":true,"minRows":1,"highlight":true,"compact":true,"showSortable":true,"height":"auto","theme":{"color":"#333333","backgroundColor":"#FFFFFF","stripedColor":"rgba(128,128,128,0.05)","style":{"fontFamily":"system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"},"headerStyle":{"borderTopStyle":"solid","borderTopWidth":"2px","borderTopColor":"#D3D3D3","borderBottomStyle":"solid","borderBottomWidth":"2px","borderBottomColor":"#D3D3D3"}},"elementId":"gpnwtlbbac","dataKey":"194543d5006dc8c637173a5007cab311"},"children":[]},"class":"reactR_markup"},"evals":["tag.attribs.columns.0.style","tag.attribs.columns.1.style","tag.attribs.columns.2.style","tag.attribs.columns.3.style","tag.attribs.columns.4.style"],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -771,6 +778,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -839,13 +873,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -924,10 +960,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -937,8 +972,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -951,6 +995,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -994,6 +1157,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1019,6 +1183,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1084,12 +1274,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023, Jaehyun Song. Powered by <a href="https://quarto.org/">Quarto</a></div>
+    <div class="nav-footer-center">
+<p>Copyright 2023, Jaehyun Song. Powered by <a href="https://quarto.org/">Quarto</a></p>
+</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

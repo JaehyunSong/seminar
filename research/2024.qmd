@@ -1,6 +1,6 @@
 ---
 title: "研究テーマ（3期生）"
-date-modified: "`r Sys.Date()`"
+date-modified: today
 ---
 
 ```{r}
