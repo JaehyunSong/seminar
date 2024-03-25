@@ -2,66 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.jaysong.net/people/2024.html</loc>
-    <lastmod>2024-01-24T06:07:57.130Z</lastmod>
+    <lastmod>2024-03-25T05:22:58.917Z</lastmod>
   </url>
   <url>
     <loc>https://www.jaysong.net/people/2022.html</loc>
-    <lastmod>2024-01-24T06:09:52.350Z</lastmod>
+    <lastmod>2024-01-24T06:09:52.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.jaysong.net/index.html</loc>
-    <lastmod>2023-11-29T02:19:50.663Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/about/about.html</loc>
-    <lastmod>2023-07-19T01:38:40.285Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/resources/reading.html</loc>
-    <lastmod>2023-07-19T01:44:57.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/entry/entry.html</loc>
-    <lastmod>2023-11-29T02:21:31.528Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/research/2024.html</loc>
-    <lastmod>2024-01-24T04:02:15.134Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/research/2023.html</loc>
-    <lastmod>2024-01-24T04:02:21.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/research/2022.html</loc>
-    <lastmod>2024-01-24T04:00:44.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/professor.html</loc>
-    <lastmod>2023-07-26T02:19:14.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/entry/prerequisite.html</loc>
-    <lastmod>2023-07-26T01:58:48.650Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/resources/roadmap.html</loc>
-    <lastmod>2023-07-26T01:57:27.853Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jaysong.net/about/goal.html</loc>
-    <lastmod>2023-07-19T01:38:28.460Z</lastmod>
+    <loc>https://www.jaysong.net/people/course.html</loc>
+    <lastmod>2024-03-25T05:22:21.347Z</lastmod>
   </url>
   <url>
     <loc>https://www.jaysong.net/about/ideal.html</loc>
     <lastmod>2023-07-19T01:38:33.323Z</lastmod>
   </url>
   <url>
+    <loc>https://www.jaysong.net/about/goal.html</loc>
+    <lastmod>2023-07-19T01:38:28.460Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/resources/roadmap.html</loc>
+    <lastmod>2023-07-26T01:57:27.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/entry/prerequisite.html</loc>
+    <lastmod>2023-07-26T01:58:48.650Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/professor.html</loc>
+    <lastmod>2024-03-25T05:20:07.246Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/research/2022.html</loc>
+    <lastmod>2024-01-24T04:00:44.354Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/research/2023.html</loc>
+    <lastmod>2024-01-24T04:02:21.599Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/research/2024.html</loc>
+    <lastmod>2024-01-24T04:02:15.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/entry/entry.html</loc>
+    <lastmod>2023-11-29T02:21:31.528Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/resources/reading.html</loc>
+    <lastmod>2023-07-19T01:44:57.456Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/about/about.html</loc>
+    <lastmod>2023-07-19T01:38:40.285Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jaysong.net/index.html</loc>
+    <lastmod>2023-11-29T02:19:50.663Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.jaysong.net/people/2023.html</loc>
-    <lastmod>2024-01-24T06:07:35.481Z</lastmod>
+    <lastmod>2024-03-25T05:24:57.080Z</lastmod>
   </url>
   <url>
     <loc>https://www.jaysong.net/people/2025.html</loc>
-    <lastmod>2024-01-24T06:07:49.176Z</lastmod>
+    <lastmod>2024-01-24T06:07:49.000Z</lastmod>
   </url>
 </urlset>

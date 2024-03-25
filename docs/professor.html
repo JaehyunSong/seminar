@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.545">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -82,13 +82,13 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Data Science for Social Science@Kandai">
-<meta property="og:description" content="関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」">
+<meta property="og:description" content="関西大学総合情報学部「専門演習/卒業研究（宋）」">
 <meta property="og:image" content="https://www.jaysong.net/imgs/favicon.png">
 <meta property="og:site_name" content="DS4SS@Kandai">
 <meta property="og:image:height" content="260">
 <meta property="og:image:width" content="260">
 <meta name="twitter:title" content="Data Science for Social Science@Kandai">
-<meta name="twitter:description" content="関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」">
+<meta name="twitter:description" content="関西大学総合情報学部「専門演習/卒業研究（宋）」">
 <meta name="twitter:image" content="https://www.jaysong.net/imgs/favicon.png">
 <meta name="twitter:creator" content="@Tintstyle">
 <meta name="twitter:site" content="@Tintstyle">
@@ -176,6 +176,10 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
     <a class="dropdown-item" href="./people/2025.html">
  <span class="dropdown-text">4期生（2025年度入ゼミ）</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./people/course.html">
+ <span class="dropdown-text">ゼミ生の進路</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -253,7 +257,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">更新日</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2024年1月24日</p>
+      <p class="date-modified">2024年3月25日</p>
     </div>
   </div>
     
@@ -286,7 +290,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="紹介">紹介</h2>
 <p>　私は政治行動論と政治学方法論を専門としています。政治行動論は政治における様々な主体（有権者、市民、政治家、官僚、マスコミ、若者、ネット民など）の行動や意識を観察したり、因果関係を分析する学問ですが、私の主な観察対象は有権者です。この観察や分析を支えるのが政治学方法論です。観察には観察済み（=既に公開されている）のデータを使うこともあれば、自分の問いを検証するために世論調査などを通じて観察する場合もあります。</p>
 <p>　要するに私の仕事は<strong>政治的現象をデータを用いて分析する</strong>ことです。私の研究活動に興味のある方は<a href="https://www.jaysong.net/">個人ホームページ</a>の<a href="https://www.jaysong.net/research/index.qmd">Researchページ</a>、使用するツールに興味のある方は<a href="https://www.jaysong.net/tutorial/index.qmd">Tutorialページ</a>を参照してください。とりわけ、ゼミの担当教員がどのような研究をする人かを知ることは重要であり、研究の履歴を見ることをおすすめします（本ゼミに限らず、全ゼミに共通します）。</p>
-<p>　趣味はグルメとゲームです。麺類（とりわけラーメン）が好きですが、最近は少し控えております。ゲームは最近、Final Fantasy XIV（Masamune@Mana）とFinal Fantasy XVIをプレイしております。</p>
+<p>　趣味はグルメとゲームです。麺類（とりわけラーメン）が好きですが、最近は少し控えております。ゲームは最近、Final Fantasy XIVとVII: Rebirth、Octopath Traveler 2をプレイしております。</p>
 </section>
 <section id="略歴" class="level2">
 <h2 class="anchored" data-anchor-id="略歴">略歴</h2>
@@ -332,7 +336,7 @@ gtag('config', 'G-1GC6ZTS6FN', { 'anonymize_ip': true});
 <li>Homepage: <a href="https://www.jaysong.net" class="uri">https://www.jaysong.net</a></li>
 <li>個人研究室：TA227（A棟2階）
 <ul>
-<li>研究室を訪問される際は、必ず事前にメール等で予約してください。</li>
+<li>オフィスアワーを除き、研究室を訪問される際は、必ず事前にメール等で予約してください。</li>
 </ul></li>
 </ul>
 
@@ -574,6 +578,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -615,7 +624,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -896,7 +909,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Copyright 2023, Jaehyun Song. Powered by <a href="https://quarto.org/">Quarto</a></p>
+<p>Copyright 2024, Jaehyun Song. Powered by <a href="https://quarto.org/">Quarto</a></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

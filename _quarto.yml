@@ -7,7 +7,7 @@ lang: ja
 website:
   site-url: "https://www.jaysong.net/"
   title: "DS4SS@Kandai"
-  page-footer: "Copyright 2023, Jaehyun Song. Powered by [Quarto](https://quarto.org/)"
+  page-footer: "Copyright 2024, Jaehyun Song. Powered by [Quarto](https://quarto.org/)"
   google-analytics: "G-1GC6ZTS6FN"
   favicon: "imgs/favicon.png"
   navbar:
@@ -52,6 +52,8 @@ website:
           href: people/2024.qmd
         - text: "4期生（2025年度入ゼミ）"
           href: people/2025.qmd
+        - text: "ゼミ生の進路"
+          href: people/course.qmd
     - id: research
       title: "研究"
       contents:
@@ -70,14 +72,14 @@ website:
           href: resources/roadmap.qmd
   twitter-card:
     title: "Data Science for Social Science@Kandai"
-    description: "関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」 "
+    description: "関西大学総合情報学部「専門演習/卒業研究（宋）」 "
     card-style: summary
     creator: "@Tintstyle"
     site: "@Tintstyle"
     image: "imgs/favicon.png"
   open-graph:
     title: "Data Science for Social Science@Kandai"
-    description: "関西大学総合情報学部「専門演習（宋）」＆「卒業研究（宋）」 "
+    description: "関西大学総合情報学部「専門演習/卒業研究（宋）」 "
     image: "imgs/favicon.png"
 
 format:
