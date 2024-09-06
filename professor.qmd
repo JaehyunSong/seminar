@@ -26,7 +26,7 @@ link-external-newwindow: true
 
 　要するに私の仕事は**政治的現象をデータを用いて分析する**ことです。私の研究活動に興味のある方は[個人ホームページ](https://www.jaysong.net/)の[Researchページ](https://www.jaysong.net/research/index.qmd)、使用するツールに興味のある方は[Tutorialページ](https://www.jaysong.net/tutorial/index.qmd)を参照してください。とりわけ、ゼミの担当教員がどのような研究をする人かを知ることは重要であり、研究の履歴を見ることをおすすめします（本ゼミに限らず、全ゼミに共通します）。
 
-　趣味はグルメとゲームです。麺類（とりわけラーメン）が好きですが、最近は少し控えております。ゲームは最近、Final Fantasy XIVとVII: Rebirth、Octopath Traveler 2をプレイしております。
+　趣味はグルメとゲームです。麺類（とりわけラーメン）が好きですが、最近は少し控えております。ゲームはFinal Fantasy XIVをメインにプレイしておりますが、RPG類全般が好きです。
 
 ## 略歴
 

@@ -5,15 +5,7 @@ link-external-newwindow: true
 toc: true
 ---
 
-<!--
-<center><a href="https://airrsv.net/song2022/calendar" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center>
--->
-
-:::{.callout-important}
-## 以下の内容は過去のものです。
-
-　**2024年度ゼミ生募集は終了**しました。2025年度入ゼミについては2024年9月中に公開します。
-:::
+<center><a href="https://kobelaw.au1.qualtrics.com/jfe/form/SV_74jINYlO9pXu7ie" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center>
 
 :::{.callout-important}
 ## 合同オフィスアワーに参加された方へ
@@ -25,11 +17,10 @@ toc: true
 
 本ゼミのオフィスアワーは**予約制**です。
 
-* **場所:** 宋の個人研究室（TA227）
-   * A棟2階にあります。
-   * 一部の時間帯はゼミ教室（TK108）で行います。
-   * 参加者の数に応じて、ゼミ教室（TK108）へ変更される場合があります。変更が生じる場合は場所移動の旨を個人研究室のドアに貼ります。
-* **予約方法:** 画面上段の専用サイトで予約してください。
+* **場所：**宋の個人研究室（TA227）
+   * A棟の2階にあります。
+   * 参加者の数に応じて、ゼミ教室（TK108）へ変更される場合があります。変更が生じる場合は、登録されたメールへお知らせします。
+* **予約方法：**画面上段の専用サイトで予約してください。
    * オフィスアワーには参加したいが、<u>希望する時間帯が掲載されていない場合</u>はメールでお問い合わせください（<song@kansai-u.ac.jp>）。適宜、枠を追加するか個別に対応します。
    * <u>メールでの予約受け付けも可能</u>です。希望する日付・時間帯を下記のリストから選び、メールでお知らせください。
 * **注意事項** 
@@ -40,16 +31,12 @@ toc: true
 
 ```{r}
 #| echo: false
-#| eval: false
 pacman::p_load(tidyverse, DT)
-tibble(Date  = c("11/13", "11/14", "11/14", "11/16",
-                 "11/17", "11/17", "11/17"),
-       Week  = c("月", "火", "火", "木", "金", "金", "金"),
-       Time1 = c("3限", "昼休み", "4限", "昼休み", 
-                 "昼休み", "3限", "4限"),
-       Place = c("TA227", "TA227", "TA227", "TA227",
-                 "TA227", "TA227", "TA227"),
-       Etc   = c()) |> 
+tibble(Date  = c("9/27", "9/30", "10/1", "10/4", "10/7", "10/8", "10/9", "10/11"),
+       Week  = c("金", "月", "火", "金", "月", "火", "水", "金"),
+       Time1 = c("4限", "3限", "4限", "4限", "昼休み", "3限", "3限", "2限"),
+       Place = c("TA227", "TA227", "TA227", "TA227", "TA227", "TA227", "Zoom", "TA227"),
+       Etc   = c("", "", "", "", "", "", "オンライン", "")) |> 
    mutate(Date  = paste0("2023/", Date),
           Date  = as.Date(Date),
           Week  = factor(Week, levels = c("月", "火", "水", "木", "金")),
@@ -58,8 +45,10 @@ tibble(Date  = c("11/13", "11/14", "11/14", "11/16",
                             Time1 == "3限" ~ "13:00",
                             Time1 == "4限" ~ "14:40",
                             TRUE           ~ "12:15"),
-          Place = factor(Place, levels = c("TA227", "TK108")),
-          Etc   = if_else(Place == "TK108", "ゼミ室", "")) |> 
+          Place = factor(Place, levels = c("TA227", "TK108", "Zoom")),
+          Etc   = case_when(Place == "TA227" ~ "個人研究室",
+                            Place == "TK108" ~ "ゼミ室",
+                            Place == "Zoom"  ~ "オンライン")) |> 
    relocate(Time2, .after = Time1) |> 
    datatable(filter   = "top",
              colnames = c("日付", "曜日", "時間", "開始時間", "場所", "備考"),
