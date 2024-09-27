@@ -1,5 +1,4 @@
 ---
-title: "Data Science for Social Science"
 link-external-newwindow: true
 ---
 
@@ -16,7 +15,7 @@ rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applica
   stringr::str_extract("202[0-9]\\.[0-9]+\\.[0-9]+\\+[0-9]+")
 ```
 
-関西大学総合情報学部「専門演習＆卒業研究（宋）」のホームページです。本ページはスマホ等のモバイルデバイスで閲覧可能ですが、PC画面での閲覧を推奨します。
+関西大学総合情報学部「専門演習＆卒業研究（宋）」のホームページです。スマホ環境の方は画面左上の「$\equiv$」ボタンをタップしてください。
 
 :::{.callout-important}
 ## 2025年度入ゼミについて
