@@ -41,6 +41,8 @@ website:
           href: entry/entry.qmd
         - text: "前提知識"
           href: entry/prerequisite.qmd
+        - text: "これまでの応募倍率"
+          href: entry/competition.qmd
     - id: list
       title: "ゼミ生"
       contents:

@@ -1,6 +1,6 @@
 ---
 title: "宋ゼミを志望する皆様へ"
-date-modified: "`r Sys.Date()`"
+date-modified: last-modified
 link-external-newwindow: true
 toc: true
 ---
@@ -10,7 +10,7 @@ toc: true
 :::{.callout-important}
 ## 合同オフィスアワーに参加された方へ
 
-　合同オフィスアワーに参加された方でも、本ゼミに申し込む予定のある方は個別オフィスアワーにもご参加ください。
+　合同オフィスアワーに参加された方でも、本ゼミに申し込む予定のある方は個別オフィスアワーにもご参加ください。本ゼミは**個別**オフィスアワー参加者を優先します。
 :::
 
 ## オフィスアワー
