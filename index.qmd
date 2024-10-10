@@ -29,9 +29,9 @@ pacman::p_load(tidyverse, DT)
 tibble(Date  = c("9/27", "9/30", "10/1", "10/4", "10/7", "10/8", "10/9", "10/11"),
        Week  = c("金", "月", "火", "金", "月", "火", "水", "金"),
        Time1 = c("4限", "3限", "4限", "4限", "昼休み", "3限", "3限", "2限"),
-       Place = c("TA227", "TA227", "TA227", "TA227", "TA227", "TA227", "Zoom", "TA227"),
-       Etc   = c("", "", "", "", "最大3名", "", "オンライン", "")) |> 
-   mutate(Date  = paste0("2023/", Date),
+       Place = c("TA227", "TA227", "TA227", "TA227", "TK108", "TA227", "Zoom", "TK108"),
+       Etc   = c("", "", "", "", "ゼミ室", "", "オンライン", "ゼミ室")) |> 
+   mutate(Date  = paste0("2024/", Date),
           Date  = as.Date(Date),
           Week  = factor(Week, levels = c("月", "火", "水", "木", "金")),
           Time1 = factor(Time1, levels = c("2限", "昼休み", "3限", "4限")),
