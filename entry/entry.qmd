@@ -5,9 +5,11 @@ link-external-newwindow: true
 toc: true
 ---
 
+<!-- 
 <center><a href="#" class="btn btn-info btn-lg" role="button"><i class="bi bi-calendar-check"></i>（受付終了）&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
+-->
 
-<!-- <center><a href="https://kobelaw.au1.qualtrics.com/jfe/form/SV_74jINYlO9pXu7ie" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/> -->
+<center><a href="https://kobelaw.au1.qualtrics.com/jfe/form/SV_cJ7bOlHbsct0a6a" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
 
 :::{.callout-important}
 ## 合同オフィスアワーに参加された方へ
@@ -30,15 +32,16 @@ toc: true
    * オフィスアワーは原則、対面で行われますが、**非対面形式のオフィスアワー**も可能です。新型コロナの感染、もしくは濃厚接触により対面での参加が困難な場合はメールでお問い合わせください。
    * 希望者の数に応じてオフィスアワーの枠が増える可能性があります（減ることはございません）。最新情報は本ページに掲載します。
    * **合同オフィスアワーに参加された方でも、本ゼミに申し込む予定のある方は個別オフィスアワーにもご参加ください。**
+      - 第1次募集時のオフィスアワーに参加された方は、第2次募集のオフィスアワーへの参加は不要です。
 
 ```{r}
 #| echo: false
 pacman::p_load(tidyverse, DT)
-tibble(Date  = c("9/27", "9/30", "10/1", "10/4", "10/7", "10/8", "10/9", "10/11"),
-       Week  = c("金", "月", "火", "金", "月", "火", "水", "金"),
-       Time1 = c("4限", "3限", "4限", "4限", "昼休み", "3限", "3限", "2限"),
-       Place = c("TA227", "TA227", "TA227", "TA227", "TK108", "TA227", "Zoom", "TK108"),
-       Etc   = c("", "", "", "", "最大3名", "", "オンライン", "")) |> 
+tibble(Date  = c("11/11", "11/11", "11/13", "11/13"),
+       Week  = c("月", "月", "水", "水"),
+       Time1 = c("昼休み", "3限", "昼休み", "3限"),
+       Place = c("TA227", "TA227", "TA227", "TA227"),
+       Etc   = c("最大3人", "", "最大3人", "")) |> 
    mutate(Date  = paste0("2024/", Date),
           Date  = as.Date(Date),
           Week  = factor(Week, levels = c("月", "火", "水", "木", "金")),

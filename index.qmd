@@ -2,9 +2,11 @@
 link-external-newwindow: true
 ---
 
+<!-- 
 <center><a href="#" class="btn btn-info btn-lg" role="button"><i class="bi bi-calendar-check"></i>（受付終了）&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
+-->
 
-<!-- <center><a href="https://kobelaw.au1.qualtrics.com/jfe/form/SV_74jINYlO9pXu7ie" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/> -->
+<center><a href="https://kobelaw.au1.qualtrics.com/jfe/form/SV_cJ7bOlHbsct0a6a" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
 
 ```{r}
 #| include: false
@@ -28,11 +30,11 @@ rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applica
 ```{r}
 #| echo: false
 pacman::p_load(tidyverse, DT)
-tibble(Date  = c("9/27", "9/30", "10/1", "10/4", "10/7", "10/8", "10/9", "10/11"),
-       Week  = c("金", "月", "火", "金", "月", "火", "水", "金"),
-       Time1 = c("4限", "3限", "4限", "4限", "昼休み", "3限", "3限", "2限"),
-       Place = c("TA227", "TA227", "TA227", "TA227", "TK108", "TA227", "Zoom", "TK108"),
-       Etc   = c("", "", "", "", "ゼミ室", "", "オンライン", "ゼミ室")) |> 
+tibble(Date  = c("11/11", "11/11", "11/13", "11/13"),
+       Week  = c("月", "月", "水", "水"),
+       Time1 = c("昼休み", "3限", "昼休み", "3限"),
+       Place = c("TA227", "TA227", "TA227", "TA227"),
+       Etc   = c("最大3人", "", "最大3人", "")) |> 
    mutate(Date  = paste0("2024/", Date),
           Date  = as.Date(Date),
           Week  = factor(Week, levels = c("月", "火", "水", "木", "金")),
