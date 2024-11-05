@@ -9,7 +9,7 @@ toc: true
 <center><a href="#" class="btn btn-info btn-lg" role="button"><i class="bi bi-calendar-check"></i>（受付終了）&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
 -->
 
-<center><a href="https://kobelaw.au1.qualtrics.com/jfe/form/SV_cJ7bOlHbsct0a6a" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
+<center><a href="https://kandaisojo.qualtrics.com/jfe/form/SV_6AqF3DLiLYAaqN0" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
 
 :::{.callout-important}
 ## 合同オフィスアワーに参加された方へ
