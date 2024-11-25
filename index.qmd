@@ -4,9 +4,9 @@ link-external-newwindow: true
 
 <!-- 
 <center><a href="#" class="btn btn-info btn-lg" role="button"><i class="bi bi-calendar-check"></i>（受付終了）&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
--->
 
 <center><a href="https://kandaisojo.qualtrics.com/jfe/form/SV_6AqF3DLiLYAaqN0" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
+-->
 
 ```{r}
 #| include: false
@@ -24,11 +24,12 @@ rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applica
 :::{.callout-important}
 ## 2025年度入ゼミについて
 
-　「応募」メニューから詳細をご確認ください。
+　2025年度の入ゼミは募集終了しました。
 :::
 
 ```{r}
 #| echo: false
+#| eval: false
 pacman::p_load(tidyverse, DT)
 tibble(Date  = c("11/11", "11/11", "11/13", "11/13"),
        Week  = c("月", "月", "水", "水"),

@@ -54,6 +54,8 @@ website:
           href: people/2024.qmd
         - text: "4期生（2025年度入ゼミ）"
           href: people/2025.qmd
+        - text: "5期生（2026年度入ゼミ）"
+          href: people/2026.qmd
         - text: "ゼミ生の進路"
           href: people/course.qmd
     - id: research

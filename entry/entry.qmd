@@ -5,9 +5,14 @@ link-external-newwindow: true
 toc: true
 ---
 
+:::{.callout-important}
+## 2025年度入ゼミについて
+
+　2025年度の入ゼミは募集終了しました。
+:::
+
 <!-- 
 <center><a href="#" class="btn btn-info btn-lg" role="button"><i class="bi bi-calendar-check"></i>（受付終了）&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
--->
 
 <center><a href="https://kandaisojo.qualtrics.com/jfe/form/SV_6AqF3DLiLYAaqN0" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
 
@@ -16,6 +21,7 @@ toc: true
 
 　合同オフィスアワーに参加された方でも、本ゼミに申し込む予定のある方は個別オフィスアワーにもご参加ください。本ゼミは**個別**オフィスアワー参加者を優先します。
 :::
+-->
 
 ## オフィスアワー
 
