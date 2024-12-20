@@ -12,7 +12,7 @@ df <- read_csv("data/list.csv")
 ## グループ研究（2024年度）
 
 ```{r}
-#| include: false
+#| echo: false
 df |> 
     filter(Year == 2024, Type == 3) |> 
     arrange(ID) |> 
@@ -26,7 +26,8 @@ df |>
                "File"  = "スライド") |> 
     cols_align(columns = File, align = "center") |> 
     cols_width(Name  ~ px(450),
-               File  ~ px(150))
+               File  ~ px(150)) |> 
+    cols_hide(File)
 ```
 
 ## 卒業研究（2025年度）
