@@ -37,19 +37,19 @@ df |>
     filter(Year == 2024, Type == 4) |> 
     arrange(ID) |> 
     mutate(File = paste0("abstract/", Year, "/", File, ".pdf")) |> 
-    #select(-Type, -Year, -ID) |> 
-    select(-Type, -Year, -ID, -File) |> 
+    select(-Type, -Year, -ID) |> 
+    #select(-Type, -Year, -ID, -File) |> 
     gt() |> 
-    #fmt_url(columns = File, as_button = TRUE, label = "PDF") |> 
+    fmt_url(columns = File, as_button = TRUE, label = "PDF") |> 
     fmt_markdown(columns = Title) |> 
     cols_label(
         "Name"  = "氏名",
         "Title" = "題目",
-        #"File"  = "概要"
+        "File"  = "概要"
     ) |> 
-    #cols_align(columns = File, align = "center") |> 
+    cols_align(columns = File, align = "center") |> 
     cols_width(
         Name  ~ px(150),
-        #File  ~ px(150)
+        File  ~ px(150)
     )
 ```
