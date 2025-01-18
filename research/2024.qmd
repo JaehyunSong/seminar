@@ -26,8 +26,7 @@ df |>
                "File"  = "スライド") |> 
     cols_align(columns = File, align = "center") |> 
     cols_width(Name  ~ px(450),
-               File  ~ px(150)) |> 
-    cols_hide(File)
+               File  ~ px(150))
 ```
 
 ## 卒業研究（2025年度）
