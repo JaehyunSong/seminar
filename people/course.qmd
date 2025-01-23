@@ -3,12 +3,26 @@ title: "ゼミ生の進路"
 date-modified: today
 ---
 
-* 株式会社AOI Pro.
-* 株式会社ベリサーブ
-* 株式会社PAL
-* アート引越センター株式会社
-* 近鉄住宅管理株式会社
-* 鈴与シンワート
-* 株式会社Buysell Technologies
-* 株式会社FUSION 
-* 伊藤忠食品株式会社
+カッコ内は卒業年度（例：2023年9月、または2024年3月卒業の場合、「2023」と表記）
+
+- [アート引越センター](https://www.the0123.com/)（2023）
+- [AOI Pro.](https://www.aoi-pro.com/jp/)（2023）
+- [伊藤忠食品](https://www.itochu-shokuhin.com/)（2023）
+- [A3](https://athree3.com/)（2024）
+- [エプソン](https://www.epson.jp/)（2024）
+- [オージス総研](https://www.ogis-ri.co.jp/)（2024）
+- [キヤノンメディカルシステムズ](https://jp.medical.canon/)（2024）
+- [近鉄住宅管理](https://www.kintetsu-community.co.jp/)（2023）
+- [サーバーワークス](https://www.serverworks.co.jp/)（2024）
+- [鈴与シンワート](https://www.shinwart.co.jp/)（2023）
+- [シスメックス](https://www.sysmex.co.jp/)（2024）
+- [東急ホテルズ&リゾーツ](https://www.tokyuhotels.co.jp/company/index.html)（2024）
+- [ドコモCS関西](https://www.docomo-cs-kansai.co.jp/)（2024）
+- [Buysell Technologies](https://buysell-technologies.com/)（2023）
+- [PAL](https://www.pal-style.co.jp/)（2023）
+- [日立製作所](https://www.hitachi.co.jp/)（2024）
+- [フージャースホールディングス](https://www.hoosiers.co.jp/)（2024）
+- [FUSION](https://fusion-inc.co.jp/)（2023）
+- [ベリサーブ](https://www.veriserve.co.jp/)（2023）
+- [マイナビ](https://www.mynavi.jp/)（2024）
+- 大学院進学（2024）
