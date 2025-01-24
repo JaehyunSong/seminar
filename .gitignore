@@ -6,6 +6,7 @@
 /.quarto/
 /*_files/
 *_cache/
+
 /research/abstract/
-/research/data/
+/research/data/list.csv
 /research/slide/
