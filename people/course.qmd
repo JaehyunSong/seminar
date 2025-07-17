@@ -3,6 +3,8 @@ title: "ゼミ生の進路"
 date-modified: today
 ---
 
+## 民間企業
+
 カッコ内は卒業年度（例：2023年9月、または2024年3月卒業の場合、「2023」と表記）
 
 - [アート引越センター](https://www.the0123.com/)（2023）
@@ -26,4 +28,9 @@ date-modified: today
 - [FUSION](https://fusion-inc.co.jp/)（2023）
 - [ベリサーブ](https://www.veriserve.co.jp/)（2023）
 - [マイナビ](https://www.mynavi.jp/)（2024）
-- 大学院進学（2024）
+
+## 大学院合格
+
+進学した場合、カッコ内に当該ゼミ生の卒業年度を表記
+
+- 関西大学総合情報学研究科
