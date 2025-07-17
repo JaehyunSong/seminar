@@ -6,6 +6,7 @@ date-modified: today
 カッコ内は卒業年度（例：2023年9月、または2024年3月卒業の場合、「2023」と表記）
 
 - [アート引越センター](https://www.the0123.com/)（2023）
+- [I&Jデジタルイノベーション](https://www.ibm.com/jp-ja/about/subsidiaries/ijdi)（2024）
 - [AOI Pro.](https://www.aoi-pro.com/jp/)（2023）
 - [伊藤忠食品](https://www.itochu-shokuhin.com/)（2023）
 - [A3](https://athree3.com/)（2024）
