@@ -10,3 +10,4 @@
 /research/data/
 /research/abstract/
 /research/slide/
+**/*.quarto_ipynb
