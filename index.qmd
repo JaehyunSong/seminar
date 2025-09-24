@@ -8,6 +8,8 @@ link-external-newwindow: true
 <center><a href="https://www.jaysong.net/garage/2025/OH/reservation.html" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
 -->
 
+<center><a href="entry/entry.html" class="btn btn-info btn-lg" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;ゼミ応募について</a></center><br/>
+
 ```{r}
 #| include: false
 ff_ver <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applications/Firefox.app/Contents/Info.plist -o -', intern = TRUE) |>
@@ -19,11 +21,15 @@ rs_ver1 <- system('plutil -extract "CFBundleShortVersionString" binary1 /Applica
   stringr::str_extract("202[0-9]\\.[0-9]+\\.[0-9]+\\+[0-9]+")
 ```
 
+<!--
 :::{.callout-important}
 ## 2026年度入ゼミについて
 
-　ゼミ応募に関する情報は「[応募 > 応募方法](entry/entry.qmd)」をご参照ください。
+　オフィス・アワーの予約やゼミ応募に関する情報は[【ここ】](entry/entry.qmd)をクリックしてください。
+
+- メニューの「[応募 > 応募方法](entry/entry.qmd)」からもアクセスできます。
 :::
+-->
 
 関西大学総合情報学部「専門演習＆卒業研究（宋）」のホームページです。スマホ環境の方は画面左上の「$\equiv$」ボタンをタップしてください。
 
