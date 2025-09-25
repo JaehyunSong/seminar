@@ -67,6 +67,8 @@ website:
           href: research/2023.qmd
         - text: "3期生（2024年度入ゼミ）"
           href: research/2024.qmd
+        - text: "4期生（2025年度入ゼミ）"
+          href: research/2025.qmd
     - id: resources
       title: "資料"
       contents:

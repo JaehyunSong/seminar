@@ -1,5 +1,5 @@
 ---
-title: "研究テーマ（3期生）"
+title: "研究テーマ（4期生）"
 date-modified: today
 ---
 
@@ -9,18 +9,19 @@ pacman::p_load(tidyverse, gt)
 df <- read_csv("data/list.csv")
 ```
 
-## グループ研究（2024年度）
+## グループ研究（2025年度）
 
 ```{r}
 #| echo: false
 df |> 
-    filter(Year == 2024, Type == 3) |> 
+    filter(Year == 2025, Type == 3) |> 
     arrange(ID) |> 
     mutate(File = paste0("slide/", Year, "/", File, ".pdf")) |> 
     select(-Type, -Year, -ID) |> 
     gt() |> 
     fmt_url(columns = File, as_button = TRUE, label = "Slide") |> 
     fmt_markdown(columns = Title) |> 
+    sub_missing(columns = Title, missing_text = "（未定）") |> 
     cols_label("Name"  = "氏名",
                "Title" = "題目",
                "File"  = "スライド") |> 
@@ -29,12 +30,12 @@ df |>
                File  ~ px(150))
 ```
 
-## 卒業研究（2025年度）
+## 卒業研究（2026年度）
 
 ```{r}
-#| echo: false
+#| include: false
 df |> 
-    filter(Year == 2025, Type == 4) |> 
+    filter(Year == 2026, Type == 4) |> 
     arrange(ID) |> 
     mutate(File = paste0("abstract/", Year, "/", File, ".pdf")) |> 
     select(-Type, -Year, -ID) |> 
