@@ -8,7 +8,10 @@ link-external-newwindow: true
 <center><a href="https://www.jaysong.net/garage/2025/OH/reservation.html" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;オフィスアワーの予約</a></center><br/>
 -->
 
-<center><a href="entry/entry.html" class="btn btn-info btn-lg" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;ゼミ応募</a> <a href="https://www.instagram.com/song_officehour?igsh=c3V0cm50cTR2dndy&utm_source=qr" class="btn btn-info btn-lg" role="button"><i class="bi bi-instagram"></i>&nbsp;&nbsp;&nbsp;Instagram</a></center>
+<center>
+<a href="https://www.instagram.com/song_officehour" class="btn btn-info btn-lg" role="button"><i class="bi bi-instagram"></i>&nbsp;&nbsp;&nbsp;Instagram</a>
+<a href="entry/entry.html" class="btn btn-info btn-lg" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;ゼミ応募</a> 
+</center>
 <center><span style="font-size:12px;">※ インスタグラムの運営はゼミ生が行っており、宋は関与しておりません。</span></center>
 
 <br/>
