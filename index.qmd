@@ -10,9 +10,9 @@ link-external-newwindow: true
 
 <center>
 <a href="entry/entry.html" class="btn btn-info btn-lg" role="button"><i class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;ゼミ応募</a> 
-<a href="https://www.instagram.com/song_officehour" class="btn btn-danger btn-lg" role="button" target="_blank"><i class="bi bi-instagram"></i>&nbsp;&nbsp;&nbsp;Instagram</a>
+<a href="http://bit.ly/3IKtRfa" class="btn btn-danger btn-lg" role="button" target="_blank"><i class="bi bi-instagram"></i>&nbsp;&nbsp;&nbsp;Instagram</a>
 </center>
-<center><span style="font-size:12px;">※ <a href="https://www.instagram.com/song_officehour" target="_blank">インスタグラム</a>の運営はゼミ生が行っており、宋は関与しておりません。</span></center>
+<center><span style="font-size:12px;">※ <a href="http://bit.ly/3IKtRfa" target="_blank">インスタグラム</a>の運営はゼミ生が行っており、宋は関与しておりません。</span></center>
 
 <br/>
 
