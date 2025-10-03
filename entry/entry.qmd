@@ -73,9 +73,10 @@ toc: true
 
 ### 応募者への課題（WEB提出）
 
+- 期限：**2025年10月17日（金）23時59分〆**
 - 以下のボタンをクリックし、応募者への課題を提出してください（**PC環境推奨**）。
    
-<center><a href="https://kandaisojo.qualtrics.com/jfe/form/SV_cuokni4Rt6DXVNI" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-journal-check"></i>&nbsp;&nbsp;&nbsp;応募者への課題</a></center><br/>
+<center><a href="https://kandaisojo.qualtrics.com/jfe/form/SV_cuokni4Rt6DXVNI" class="btn btn-info btn-lg" target="_blank" role="button"><i class="bi bi-journal-check"></i>&nbsp;&nbsp;&nbsp;応募者への課題（10/17〆）</a></center><br/>
 
 
 - 事前に以下の内容をメモ等で用意しておくとスムーズに提出できます。
